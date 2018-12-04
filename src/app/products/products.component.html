@@ -1,4 +1,5 @@
-<div fxFlex fxLayout="row" fxLayoutGap="20px">
+<div fxFlex fxLayout="row" fxLayoutAlign="space-around" fxLayoutGap="20px" *ngIf="products;else loader">
+
   <mat-selection-list #shoes fxFlex="30">
     <mat-list-option>
       All Categories
@@ -35,3 +36,7 @@
     </mat-card>
   </div>
 </div>
+
+<ng-template #loader>
+  <mat-spinner></mat-spinner>
+</ng-template>
