@@ -1,0 +1,37 @@
+<div fxFlex fxLayout="row" fxLayoutGap="20px">
+  <mat-selection-list #shoes fxFlex="30">
+    <mat-list-option>
+      All Categories
+    </mat-list-option>
+    <mat-list-option>
+      Fruits
+    </mat-list-option>
+    <mat-list-option>
+      Breads
+    </mat-list-option>
+    <mat-list-option>
+      Vegetables
+    </mat-list-option>
+    <mat-list-option>
+      Seasonings and Spices
+    </mat-list-option>
+    <mat-list-option>
+      Dairy
+    </mat-list-option>
+  </mat-selection-list>
+
+  <div fxFlex="80" fxLayout="row wrap" fxLayoutGap="40px">
+    <mat-card *ngFor="let product of products | keyvalue;" class="example-card" fxFlex="30" fxFlex.xs="100">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{product.value.title}}</mat-card-title>
+        <mat-card-subtitle>{{product.value.category}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{product.value.imageUrl}}" alt="Product Image">
+
+      <mat-card-actions>
+        <button mat-raised-button color="primary" style="width:100%;">Add to Cart</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
