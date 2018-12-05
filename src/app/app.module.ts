@@ -14,6 +14,11 @@ import { ProductsComponent } from './products/products.component';
 import { AuthService } from './services/auth.service';
 import { OrdersService } from './services/orders.service';
 import { ProductsService } from './services/products.service';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { ProductDatatableComponent } from './admin/product-datatable/product-datatable.component';
+import { CategoryService } from './services/category.service';
+import { ReviewsComponent } from './dashboards/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import { ProductsService } from './services/products.service';
     MyOrdersComponent,
     OrdersComponent,
     AdminProductsComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductCardComponent,
+    ProductFormComponent,
+    ProductDatatableComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,12 +44,13 @@ import { ProductsService } from './services/products.service';
       { path: 'my-orders', component: MyOrdersComponent },
       { path: 'admin/orders', component: OrdersComponent },
       { path: 'admin/products', component: AdminProductsComponent },
+      { path: 'admin/products/new', component: ProductFormComponent },
       { path: 'products', component: ProductsComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },
 
     ])
   ],
-  providers: [AuthService, OrdersService, ProductsService],
+  providers: [AuthService, OrdersService, ProductsService, CategoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

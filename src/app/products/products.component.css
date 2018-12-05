@@ -6,7 +6,11 @@
   background-size: cover;
 }
 
-.mat-list {
+.mat-selection-list {
   height: 300px;
-  border: solid 1px;
+  border: solid 1px lightgray;
+}
+
+.w-100 {
+  height: 100px;
 }

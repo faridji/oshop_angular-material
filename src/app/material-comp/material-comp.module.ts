@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatSelectModule, MatMenu, MatMenuModule, MatCardModule, MatProgressSpinnerModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatSelectModule, MatMenu, MatMenuModule, MatCardModule, MatProgressSpinnerModule, MatInputModule, MatTableModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -18,6 +18,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatCardModule,
     MatProgressSpinnerModule,
+    MatInputModule,
+    MatTableModule,
   ]
 })
 export class MaterialCompModule { }

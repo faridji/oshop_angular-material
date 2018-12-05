@@ -1,3 +1,5 @@
-<p>
-  admin-products works!
-</p>
+<button mat-raised-button color="primary" (click)="addProduct()">New Product</button>
+
+<div *ngFor="let product of products | keyvalue; let i=index">
+  <product-datatable [product]="product.value"></product-datatable>
+</div>
