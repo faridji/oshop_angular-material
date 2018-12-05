@@ -1,4 +1,4 @@
-<div fxLayout="column">
+<div fxLayout="column" fxLayoutGap="40px">
 
   <!-- First Card -->
   <mat-card class="example-card">
@@ -74,31 +74,88 @@
     </mat-card-content>
   </mat-card>
 
-  <div fxLayout="row" style="margin-top:30px;">
+  <div fxLayout="row">
     <div fxLayout="column">
       <mat-label>Received > </mat-label>
       <mat-label>01:24 Pm > </mat-label>
     </div>
-    <!-- <div fxLayout="row">
-      <mat-label>Received > </mat-label>
+    <div fxLayout="column">
       <mat-label>Accepted / Rejected > </mat-label>
+      <mat-label>01:26 Pm > </mat-label>
+    </div>
+    <div fxLayout="column">
       <mat-label>Preparing > </mat-label>
+      <mat-label>01:26 Pm > </mat-label>
+    </div>
+    <div fxLayout="column">
       <mat-label>Ready for Pickup > </mat-label>
+      <mat-label>01:30 Pm > </mat-label>
+    </div>
+    <div fxLayout="column">
       <mat-label>Cash Paid > </mat-label>
-      <mat-label class="heading">Picked Up > </mat-label>
-      <mat-label>On the way > </mat-label>
+      <mat-label>02:00 Pm > </mat-label>
+    </div>
+    <div fxLayout="column" class="heading">
+      <mat-label>Picked Up > </mat-label>
+      <mat-label>02:06 Pm > </mat-label>
+    </div>
+    <div fxLayout="column">
       <mat-label>Delivered / Problem Reported > </mat-label>
-      <mat-label>Cash Collected / Problem Reported > </mat-label>
+      <mat-label> </mat-label>
+    </div>
+    <div fxLayout="column">
+      <mat-label>Cash Collected / Problem Reported </mat-label>
+      <mat-label> </mat-label>
     </div>
 
-    <div fxLayout="row">
-      <mat-label>01:24 Pm > </mat-label>
-      <mat-label>01:26 Pm > </mat-label>
-      <mat-label>01:30 Pm > </mat-label>
-      <mat-label>02:00 Pm > </mat-label>
-      <mat-label>02:04 Pm > </mat-label>
-      <mat-label class="heading">02:06 Pm > </mat-label>
-    </div> -->
-
   </div>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="image">
+      <th mat-header-cell *matHeaderCellDef> Image </th>
+      <td mat-cell *matCellDef="let element">
+        <img [src]="element.image" class="circle-image" alt="image"></td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="item name">
+      <th mat-header-cell *matHeaderCellDef> Item Name </th>
+      <td mat-cell *matCellDef="let element"> {{element['item name']}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef> Quantity </th>
+      <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="unit_price">
+      <th mat-header-cell *matHeaderCellDef> Unit Price </th>
+      <td mat-cell *matCellDef="let element"> {{element.unit_price}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="promotion">
+      <th mat-header-cell *matHeaderCellDef> Promotion / Coupon Code </th>
+      <td mat-cell *matCellDef="let element"> {{element.promotion}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="discount">
+      <th mat-header-cell *matHeaderCellDef> Discount </th>
+      <td mat-cell *matCellDef="let element"> {{element.discount}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="total">
+      <th mat-header-cell *matHeaderCellDef> Total </th>
+      <td mat-cell *matCellDef="let element"> {{element.total}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
 </div>

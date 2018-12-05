@@ -1,5 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+export interface PeriodicElement {
+  image: string;
+  'item name': string;
+  quantity: number,
+  unit_price: number;
+  promotion: string;
+  discount: number,
+  total: number
+}
 
+const ELEMENT_DATA: PeriodicElement[] = [
+  { image: '/assets/burger.jpg', 'item name': 'Checken Mac', quantity: 1, unit_price: 410, promotion: 'Outlet', discount: 7.00, total: 403.00 },
+];
 @Component({
   selector: 'app-reviews',
   templateUrl: './reviews.component.html',
@@ -7,8 +19,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  states = ['Received', 'Accepted / Rejected', 'Preparing', 'Ready for Pickup', 'Cash Paid', 'Picked Up', 'On the Way', 'Delivered / Problem Reported', 'Cash Collected / Problem Reported']
-  values = ['01:24 PM', '01:26 PM', '01:30 PM', '02:00 Pm', '02:04 PM', '02:06 PM']
+  displayedColumns: string[] = ['image', 'item name', 'quantity', 'unit_price', 'promotion', 'discount', 'total'];
+  dataSource = ELEMENT_DATA;
   constructor() { }
 
   ngOnInit() {
