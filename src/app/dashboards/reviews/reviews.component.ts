@@ -11,6 +11,8 @@ export interface PeriodicElement {
 
 const ELEMENT_DATA: PeriodicElement[] = [
   { image: '/assets/burger.jpg', 'item name': 'Checken Mac', quantity: 1, unit_price: 410, promotion: 'Outlet', discount: 7.00, total: 403.00 },
+  { image: '/assets/burger.jpg', 'item name': 'Checken Mac', quantity: 1, unit_price: 0, promotion: '', discount: 0, total: 0 },
+  { image: '', 'item name': 'Special Request', quantity: 0, unit_price: 0, promotion: '', discount: 0, total: 0 },
 ];
 @Component({
   selector: 'app-reviews',
