@@ -139,7 +139,7 @@
       </div>
 
       <div fxLayout="row" fxLayoutAlign="start">
-        <div fxLayout="column" class="border" fxFlex="10">
+        <div fxLayout="column" class="border" fxFlex="10" fxLayoutGap="40px">
           <img src="/assets/burger.jpg" class="circle-image" alt="image">
           <img src="/assets/burger.jpg" class="circle-image" alt="image">
         </div>
@@ -167,15 +167,23 @@
 
           <div fxLayout="column" fxLayoutGap="10px">
             <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Special Request</mat-label>
-            <mat-label>Mayo: Extra</mat-label>
-            <mat-label>Cheese: Extra Cheese</mat-label>
-            <mat-label>Lattuse: Extra</mat-label>
-          </div>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <div fxLayout="column" class="heading">
+                <mat-label>Mayo:</mat-label>
+                <mat-label>Cheese:</mat-label>
+                <mat-label>Lattuse:</mat-label>
+              </div>
 
+              <div fxLayout="column">
+                <mat-label>Extra</mat-label>
+                <mat-label>Extra Cheese</mat-label>
+                <mat-label>Extra</mat-label>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div fxLayout="row" fxFlex="50">
-
           <div fxLayout="column" fxFlex="20" fxLayoutGap="150px" class="border">
             <div>
               <mat-label class="heading">01</mat-label>
@@ -236,9 +244,19 @@
 
           <div fxLayout="column" fxLayoutGap="10px">
             <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Special Request</mat-label>
-            <mat-label>Mayo: Extra</mat-label>
-            <mat-label>Cheese: Extra Cheese</mat-label>
-            <mat-label>Lattuse: Extra</mat-label>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <div fxLayout="column" class="heading">
+                <mat-label>Mayo:</mat-label>
+                <mat-label>Cheese:</mat-label>
+                <mat-label>Lattuse:</mat-label>
+              </div>
+
+              <div fxLayout="column">
+                <mat-label>Extra</mat-label>
+                <mat-label>Extra Cheese</mat-label>
+                <mat-label>Extra</mat-label>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -363,12 +381,9 @@
         <div>
           <img src="/assets/avatar.jpg" style="width: 80px;height: 80px; border-radius: 100%;" alt="image">
         </div>
-
         <div>
           <p>Tallat Jamil <span class="heading">(Area Name)</span> Delivery Pool </p>
-
           <mat-icon>call</mat-icon>0300-1234567
-
         </div>
       </div>
 
@@ -388,30 +403,29 @@
       <div style="background-color:#ffefb6; padding: 10px; margin: -16px -16px 0 -16px;">
         Reviews
       </div>
-      <div fxLayout="column" fxLayoutGap="10px">
-        <div fxLayout="row" fxLayoutAlign="space-between">
-          <div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div fxLayout="column" fxLayoutAlign="space-between">
+          <div style="font-size:13px; font-weight: bold">
             <p><span>&nbsp;</span><span>&nbsp;</span>By Customer:</p>
             <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Temprature of meal was good,
               but it was very oily and packed very
               poor.</p>
           </div>
 
-          <div fxLayout="column" fxLayoutGap="5px">
-            <button mat-raised-button color="primary">Reply</button>
-            <button mat-raised-button style="background:orange; color:white">Hide Comment</button>
-          </div>
-        </div>
-        <div fxLayout="row" fxLayoutAlign="space-between">
-          <div>
+          <div style="font-size:13px; font-weight: bold">
             <p><span>&nbsp;</span><span>&nbsp;</span>By Rider:</p>
             <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>I complained about packing,
               but Outlet staff did not agreed to change the packing</p>
           </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-between">
 
-          <div fxLayout="column" fxLayoutAlign="center center">
-            <button mat-raised-button style="background:yellow; color:black">Reply Rider</button>
+          <div fxLayout="column" fxLayoutGap="5px">
+            <button mat-raised-button color="primary">Reply</button>
+            <button mat-raised-button style="background:orange; color:white">Hide Comment</button>
           </div>
+
+          <button mat-raised-button style="background:yellow; color:black">Reply Rider</button>
         </div>
       </div>
 
