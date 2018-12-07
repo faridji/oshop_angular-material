@@ -1,0 +1,28 @@
+.circle-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.small-rounded-images {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-size: cover;
+  background: orange;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.card-header {
+  border: 1px solid gray;
+  background-color: lightgray;
+  padding: 6px;
+}
+
+.border {
+  border-left: 1px solid gray;
+}

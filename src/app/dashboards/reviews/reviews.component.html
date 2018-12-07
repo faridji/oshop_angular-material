@@ -1,0 +1,434 @@
+<div fxLayout="column" fxLayoutGap="20px">
+  <!-- First Card -->
+  <mat-card class="example-card">
+    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="20px">
+      <!-- Back Arrow -->
+      <div>
+        <mat-icon>arrow_back</mat-icon>
+      </div>
+
+      <!-- 2nd Div-->
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <div>
+          <img src="/assets/pizza_hut.png" class="circle-image" alt="image">
+        </div>
+        <div fxLayout="column">
+          <div fxLayout="row" fxLayoutGap="40px">
+            <div fxLayout="column" fxLayoutGap="10px">
+              <mat-label class="heading">Name:</mat-label>
+              <mat-label class="heading">Address:</mat-label>
+              <mat-label class="heading">Phone:</mat-label>
+            </div>
+
+            <div fxLayout="column" fxLayoutGap="10px">
+              <mat-label>Pizza Hut F-11</mat-label>
+              <mat-label>F-11 Markaz, Islambad</mat-label>
+              <mat-label>111</mat-label>
+            </div>
+          </div>
+          <div>
+            <h2>Payment Terms: Cash / Credit</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd Div -->
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <div>
+          <img src="/assets/placeholder.png" class="circle-image" alt="image">
+        </div>
+        <div fxLayout="column" fxLayoutGap="50px">
+          <div fxLayout="row" fxLayoutGap="40px">
+            <div fxLayout="column">
+              <mat-label class="heading">Customer Name</mat-label>
+            </div>
+            <div fxLayout="column">
+              <mat-label>Test Account</mat-label>
+            </div>
+          </div>
+          <div>
+            <h2>Payment Terms: Cash / Credit</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th Div -->
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
+        <div fxLayout="column" fxFlex="100" fxLayoutAlign="space-between center">
+          <mat-label>Print</mat-label>
+          <div>
+            <mat-icon style="font-size:54px; height:auto; width: auto; color: orange;">print</mat-icon>
+          </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="space-between center">
+          <mat-label>Update Status</mat-label>
+          <div class="small-rounded-images">
+            <mat-icon style="font-size:50px; color: white;">more_horiz</mat-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th Div -->
+      <div fxLayout="row" fxLayoutGap="20px">
+        <div fxLayout="column" fxLayoutGap="10px">
+          <mat-label class="heading">Order No:</mat-label>
+          <mat-label class="heading">Order amount:</mat-label>
+          <mat-label class="heading">Order Type:</mat-label>
+          <mat-label class="heading">Date Added:</mat-label>
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="10px">
+          <mat-label class="heading">TFD0000043</mat-label>
+          <mat-label>340</mat-label>
+          <mat-label class="heading">Delivery</mat-label>
+          <mat-label>Nov, 5 2017</mat-label>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+  <div fxLayout="row">
+    <div fxLayout="column">
+      <mat-label>Received > </mat-label>
+      <mat-label>01:24 Pm > </mat-label>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <mat-label>Accepted / Rejected > </mat-label>
+      <mat-label>01:26 Pm </mat-label>
+    </div>
+    <div fxLayout="column">
+      <mat-label>Preparing > </mat-label>
+      <mat-label>> 01:26 Pm > </mat-label>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <mat-label>Ready for Pickup > </mat-label>
+      <mat-label>01:30 Pm </mat-label>
+    </div>
+    <div fxLayout="column">
+      <mat-label>Cash Paid > </mat-label>
+      <mat-label>> 02:00 Pm > </mat-label>
+    </div>
+    <div fxLayout="column" class="heading">
+      <mat-label>Picked up > </mat-label>
+      <mat-label>02:06 Pm > </mat-label>
+    </div>
+    <div fxLayout="column">
+      <mat-label>Delivered / Problem Reported > </mat-label>
+      <mat-label> </mat-label>
+    </div>
+    <div fxLayout="column">
+      <mat-label>Cash Collected / Problem Reported </mat-label>
+      <mat-label> </mat-label>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <mat-card class="example-card" style="padding: 0;">
+    <div fxLayout="column">
+
+      <!-- First Item -->
+      <div class="card-header" fxLayout="row">
+        <mat-label fxFlex="10">Image</mat-label>
+        <mat-label class="heading" fxFlex="40">Item Name</mat-label>
+        <mat-label fxFlex="10">Quantity</mat-label>
+        <mat-label fxFlex="10">Unit Price</mat-label>
+        <mat-label fxFlex="10">Promotion / Coupon Code</mat-label>
+        <mat-label fxFlex="10">Discount</mat-label>
+        <mat-label fxFlex="10" fxLayoutAlign="end">Total</mat-label>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="start">
+        <div fxLayout="column" class="border" fxFlex="10" fxLayoutGap="40px">
+          <img src="/assets/burger.jpg" class="circle-image" alt="image">
+          <img src="/assets/burger.jpg" class="circle-image" alt="image">
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="10px" style="padding:10px; border-left: 1px solid gray" fxFlex="40">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Chicken Mac:
+              Chicken
+              Big Mac</mat-label>
+            <mat-label>Medium Extra Value Meal</mat-label>
+            <mat-label>Fries: 50 G Normal Pack</mat-label>
+            <mat-label>Drinks: Med Coca Cola</mat-label>
+            <mat-divider style="position:relative;"></mat-divider>
+          </div>
+
+          <div fxLayout="column" fxLayoutGap="10px">
+            <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Chicken Mac:
+              Chicken
+              Big Mac</mat-label>
+            <mat-label>Large Extra Value Meal</mat-label>
+            <mat-label>Drinks: Large Sprite</mat-label>
+            <mat-label>Fries: </mat-label>
+            <mat-divider style="position:relative;"></mat-divider>
+          </div>
+
+          <div fxLayout="column" fxLayoutGap="10px">
+            <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Special Request</mat-label>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <div fxLayout="column" class="heading">
+                <mat-label>Mayo:</mat-label>
+                <mat-label>Cheese:</mat-label>
+                <mat-label>Lattuse:</mat-label>
+              </div>
+
+              <div fxLayout="column">
+                <mat-label>Extra</mat-label>
+                <mat-label>Extra Cheese</mat-label>
+                <mat-label>Extra</mat-label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="50">
+          <div fxLayout="column" fxFlex="20" fxLayoutGap="150px" class="border">
+            <div>
+              <mat-label class="heading">01</mat-label>
+            </div>
+            <div>
+              <mat-label class="heading">01</mat-label>
+            </div>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <div>
+              <mat-label>410.00</mat-label>
+            </div>
+            <div fxLayout="column">
+              <mat-label>08:00</mat-label>
+              <mat-label>20.00</mat-label>
+              <mat-label>08:00</mat-label>
+            </div>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <mat-label>On Outlet</mat-label>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <mat-label>07</mat-label>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between end" fxFlex="20" style="border-right: 1px solid gray; border-left: 1px solid gray">
+            <div>
+              <mat-label>403.00</mat-label>
+            </div>
+            <div fxLayout="column">
+              <mat-label>08:00</mat-label>
+              <mat-label>20.00</mat-label>
+              <mat-label>08:00</mat-label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Item -->
+      <div fxLayout="row" fxLayoutAlign="start" style="border-top: 1px solid gray;">
+        <div fxLayout="column" class="border" fxFlex="10">
+          <img src="/assets/burger.jpg" class="circle-image" alt="image">
+        </div>
+
+        <div fxLayout="column" fxLayoutGap="10px" style="padding:10px; border-left: 1px solid gray" fxFlex="40">
+          <div fxLayout="column" fxLayoutGap="10px">
+            <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Chicken Mac:
+              Chicken
+              Big Mac</mat-label>
+            <mat-label>Medium Extra Value Meal</mat-label>
+            <mat-label>Fries: 50 G Normal Pack</mat-label>
+            <mat-label>Drinks: Med Coca Cola</mat-label>
+            <mat-divider style="position:relative;"></mat-divider>
+          </div>
+
+          <div fxLayout="column" fxLayoutGap="10px">
+            <mat-label class="heading" style="background-color:lightgray; padding: 6px; width:50%;">Special Request</mat-label>
+            <div fxLayout="row" fxLayoutGap="10px">
+              <div fxLayout="column" class="heading">
+                <mat-label>Mayo:</mat-label>
+                <mat-label>Cheese:</mat-label>
+                <mat-label>Lattuse:</mat-label>
+              </div>
+
+              <div fxLayout="column">
+                <mat-label>Extra</mat-label>
+                <mat-label>Extra Cheese</mat-label>
+                <mat-label>Extra</mat-label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div fxLayout="row" fxFlex="50">
+          <div fxLayout="column" fxFlex="20" class="border">
+            <div>
+              <mat-label class="heading">01</mat-label>
+            </div>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <div>
+              <mat-label>410.00</mat-label>
+            </div>
+            <div fxLayout="column">
+              <mat-label>08:00</mat-label>
+              <mat-label>20.00</mat-label>
+              <mat-label>08:00</mat-label>
+            </div>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <mat-label>On Outlet</mat-label>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+            <mat-label>07</mat-label>
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between end" fxFlex="20" style="border-right: 1px solid gray; border-left: 1px solid gray">
+            <div>
+              <mat-label>403.00</mat-label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SubTotal -->
+      <div class="card-header" fxLayout="row">
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label class="heading" fxFlex="40">Subtotal</mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label class="heading" fxFlex="10">14.00</mat-label>
+        <mat-label class="heading" fxFlex="10" fxLayoutAlign="end">842.00</mat-label>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="start" style="border-top: 1px solid gray;">
+        <div fxLayout="column" class="border" fxFlex="10">
+
+        </div>
+
+        <div fxLayout="column" style="padding:10px; border-left: 1px solid gray" fxFlex="40">
+          <div fxLayout="column" fxLayoutGap="3px">
+            <p>Delivery Charges:</p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Low Order
+              Charge: MacDonalds: Rs.0.00, Rahat:<span style="color:red">Rs.50.00</span></p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Multiple
+              Order Charge:</p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+              MacDonalds: Rs.0.00 Rahat</p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Rahat
+              Bakers: <span style="color:red">Rs.50.00</span></p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Distance
+              Charge: <span>Rs.22.00</span> (3.46 KM)</p>
+            <p>Rounding</p>
+            <p>Total Payable</p>
+            <mat-divider style="position:relative;"></mat-divider>
+          </div>
+        </div>
+
+        <div fxLayout="row" fxFlex="50">
+          <div fxLayout="column" fxFlex="20" class="border">
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between" fxFlex="20" class="border">
+          </div>
+
+          <div fxLayout="column" fxLayoutAlign="space-between end" fxFlex="20" style="border-right: 1px solid gray; border-left: 1px solid gray">
+            <div>
+              <mat-label>122.00</mat-label>
+            </div>
+            <div>
+              <mat-label>0.12</mat-label>
+            </div>
+            <div>
+              <mat-label>1128.00</mat-label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total -->
+      <div class="card-header" fxLayout="row">
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label class="heading" fxFlex="40">Total</mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10"></mat-label>
+        <mat-label fxFlex="10" fxLayoutAlign="end"></mat-label>
+      </div>
+    </div>
+  </mat-card>
+
+
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <mat-card class="example-card">
+
+      <div style="background-color:orange; padding: 10px; color: white; font-weight: bold; margin: -16px -16px 0 -16px;">
+        Rider Info
+      </div>
+      <div fxLayout="row" fxLayoutGap="30px">
+        <div>
+          <img src="/assets/avatar.jpg" style="width: 80px;height: 80px; border-radius: 100%;" alt="image">
+        </div>
+        <div>
+          <p>Tallat Jamil <span class="heading">(Area Name)</span> Delivery Pool </p>
+          <mat-icon>call</mat-icon>0300-1234567
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between">
+        <div>
+          <p>
+            <mat-icon>check</mat-icon>Online
+          </p>
+        </div>
+        <div>
+          <p>Reaching in: <mat-icon>timer</mat-icon>
+          </p>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="example-card">
+      <div style="background-color:#ffefb6; padding: 10px; margin: -16px -16px 0 -16px;">
+        Reviews
+      </div>
+      <div fxLayout="row" fxLayoutGap="10px">
+        <div fxLayout="column" fxLayoutAlign="space-between">
+          <div style="font-size:13px; font-weight: bold">
+            <p><span>&nbsp;</span><span>&nbsp;</span>By Customer:</p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>Temprature of meal was good,
+              but it was very oily and packed very
+              poor.</p>
+          </div>
+
+          <div style="font-size:13px; font-weight: bold">
+            <p><span>&nbsp;</span><span>&nbsp;</span>By Rider:</p>
+            <p><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>I complained about packing,
+              but Outlet staff did not agreed to change the packing</p>
+          </div>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-between">
+
+          <div fxLayout="column" fxLayoutGap="5px">
+            <button mat-raised-button color="primary">Reply</button>
+            <button mat-raised-button style="background:orange; color:white">Hide Comment</button>
+          </div>
+
+          <button mat-raised-button style="background:yellow; color:black">Reply Rider</button>
+        </div>
+      </div>
+
+    </mat-card>
+  </div>
+</div>
