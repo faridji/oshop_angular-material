@@ -19,6 +19,7 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
 import { ProductDatatableComponent } from './admin/product-datatable/product-datatable.component';
 import { CategoryService } from './services/category.service';
 import { ReviewsComponent } from './dashboards/reviews/reviews.component';
+import { ReviewDialogComponent } from './dashboards/review-dialog/review-dialog.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ReviewsComponent } from './dashboards/reviews/reviews.component';
     ProductCardComponent,
     ProductFormComponent,
     ProductDatatableComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    ReviewDialogComponent
   ],
   imports: [
     BrowserModule,
