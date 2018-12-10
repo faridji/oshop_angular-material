@@ -1,3 +1,193 @@
-<p>
-  review-dialog works!
-</p>
+<div fxLayout="column" style="width:40%; border: 4px solid gray;">
+  <div fxLayout="row" fxLayoutAlign="space-between" class="header">
+    <div><h2>New Order</h2></div>
+    <div><h2>Fowrry</h2></div>
+  </div>
+
+  <div
+    fxLayout="column"
+    fxLayoutGap="10px"
+    style="font-weight:bold; padding:10px"
+  >
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div>Customer:</div>
+      <div>Mr.Abcdef Ghijklmnop</div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div fxLayout="row" fxFlex="100">
+      <div fxLayout="column" fxFlex="33" fxLayoutGap="20px">
+        <div>Item</div>
+        <div>McChicken</div>
+        <div>Big Mac Combo</div>
+        <div fxLayout="column">
+          <div>Fries</div>
+          <div>Pepse</div>
+        </div>
+        <div>11 Pcs Chicken Deal</div>
+        <div>1 Lit Mountain Dew</div>
+        <div>Total</div>
+      </div>
+      <div fxLayout="column" fxFlex="33" fxLayoutGap="20px">
+        <div>Qty</div>
+        <div>2x</div>
+        <div>1x</div>
+        <div fxLayout="column">
+          <div></div>
+          <div></div>
+        </div>
+        <div>1x</div>
+        <div>1x</div>
+        <div></div>
+      </div>
+      <div fxLayout="column" fxFlex="33" fxLayoutGap="20px">
+        <div>Value (Rs)</div>
+        <div>900.00</div>
+        <div>430.00</div>
+        <div fxLayout="column">
+          <div></div>
+          <div></div>
+        </div>
+        <div>990.00</div>
+        <div>150.00</div>
+        <div>2470.00</div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div fxLayout="row" fxLayoutAlign="space-between" style="padding:10px;">
+      <button
+        mat-raised-button
+        style="width:190px; height:50px; background-color: #e84a0d; color:white"
+      >
+        Approve
+      </button>
+      <button
+        mat-button
+        style="width:190px; height:50px; color:red; border: 1px solid red;"
+      >
+        Reject
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-between"
+      style="font-weight:normal"
+    >
+      <div fxLayout="column">
+        <mat-label>Order Time:</mat-label>
+        <mat-label>Preparation Time:</mat-label>
+        <mat-label>Rider ETA</mat-label>
+      </div>
+
+      <div fxLayout="column">
+        <mat-label>08:34 pm</mat-label>
+        <mat-label style="color:red">20 min</mat-label>
+        <mat-label style="color:red">15 min</mat-label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br /><br /><br /><br />
+
+<div fxLayout="column" style="width:40%; border: 4px solid gray;">
+  <div fxLayout="row" fxLayoutAlign="space-between" class="header">
+    <div><h2>New Order</h2></div>
+    <div><h2>Fowrry</h2></div>
+  </div>
+
+  <div
+    fxLayout="column"
+    fxLayoutGap="10px"
+    style="font-weight:bold; padding:10px"
+  >
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div>Customer:</div>
+      <div>Mr.Abcdef Ghijklmnop</div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div>Item</div>
+      <div>Qty</div>
+      <div>Value (Rs)</div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div fxLayout="column" fxLayoutGap="20px">
+        <div>McChicken</div>
+        <div>Big Mac Combo</div>
+        <div fxLayout="column">
+          <div>Fries</div>
+          <div>Pepse</div>
+        </div>
+        <div>11 Pcs Chicken Deal</div>
+        <div>1 Lit Mountain Dew</div>
+        <div>Total</div>
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="20px">
+        <div>2x</div>
+        <div>1x</div>
+        <div fxLayout="column">
+          <div></div>
+          <div></div>
+        </div>
+        <div>1x</div>
+        <div>1x</div>
+        <div></div>
+      </div>
+
+      <div fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="20px">
+        <div>900.00</div>
+        <div>430.00</div>
+        <div fxLayout="column">
+          <div></div>
+          <div></div>
+        </div>
+        <div>990.00</div>
+        <div>150.00</div>
+        <div>2470.00</div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div fxLayout="row" fxLayoutAlign="space-between" style="padding:10px;">
+      <button
+        mat-raised-button
+        style="width:190px; height:50px; background-color: #e84a0d; color:white"
+      >
+        Approve
+      </button>
+      <button
+        mat-button
+        style="width:190px; height:50px; color:red; border: 1px solid red;"
+      >
+        Reject
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div
+      fxLayout="row"
+      fxLayoutAlign="space-between"
+      style="font-weight:normal"
+    >
+      <div fxLayout="column">
+        <mat-label>Order Time:</mat-label>
+        <mat-label>Preparation Time:</mat-label>
+        <mat-label>Rider ETA</mat-label>
+      </div>
+
+      <div fxLayout="column">
+        <mat-label>08:34 pm</mat-label>
+        <mat-label style="color:red">20 min</mat-label>
+        <mat-label style="color:red">15 min</mat-label>
+      </div>
+    </div>
+  </div>
+</div>
