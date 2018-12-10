@@ -13,6 +13,14 @@
   background: orange;
 }
 
+.rounded-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-size: cover;
+  background: red;
+}
+
 .heading {
   font-weight: bold;
 }

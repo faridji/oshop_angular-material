@@ -1,66 +1,54 @@
 <div fxLayout="column" fxLayoutGap="20px">
   <!-- First Card -->
-  <mat-card>
-    <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="20px">
-      <!-- Back Arrow -->
-      <div>
-        <mat-icon>arrow_back</mat-icon>
+  <mat-card fxLayout="row" style="padding:1px;" fxLayoutGap="20px">
+      <div class="rounded-arrow">
+        <mat-icon style="font-size:25px; color: white;">arrow_back</mat-icon>
       </div>
-
-      <!-- Address Info -->
-      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+    
+      <div fxLayout="row" fxLayoutGap="10px">
         <div>
-          <img src="/assets/pizza_hut.png" class="circle-image" alt="image">
+          <img src="/assets/pizza_hut.png" class="circle-image" alt="image" />
         </div>
+    
         <div fxLayout="column">
-          <div fxLayout="row" fxLayoutGap="30px">
-            <div fxLayout="column" fxLayoutGap="10px">
+          <div fxLayout="row" fxLayoutGap="40px">
+            <div fxLayout="column" fxLayoutGap="3px">
               <mat-label class="heading">Name:</mat-label>
               <mat-label class="heading">Address:</mat-label>
               <mat-label class="heading">Phone:</mat-label>
             </div>
-            <div fxLayout="column" fxLayoutGap="10px">
+            <div fxLayout="column" fxLayoutGap="3px">
               <mat-label>Pizza Hut F-11</mat-label>
               <mat-label>F-11 Markaz, Islambad</mat-label>
               <mat-label>111</mat-label>
             </div>
           </div>
-
-          <div>
-            <h2>Payment Terms: Cash / Credit</h2>
-          </div>
+    
+          <div><h3>Payment Terms: Cash / Credit</h3></div>
         </div>
       </div>
-
-      <!-- Acount Info -->
-      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+    
+      <div fxLayout="row" fxLayoutGap="10px">
         <div>
-          <img src="/assets/placeholder.png" class="circle-image" alt="image">
+          <img src="/assets/placeholder.png" class="circle-image" alt="image" />
         </div>
-        <div fxLayout="column" fxLayoutGap="50px">
+        <div fxLayout="column" fxLayoutGap="40px">
           <div fxLayout="row" fxLayoutGap="40px">
-            <div class="heading">
-              Customer Name:
-            </div>
-            <div>
-              Test Account
-            </div>
+            <div class="heading">Customer Name:</div>
+            <div>Test Account</div>
           </div>
-          <div>
-            <h2>Payment Terms: Cash / Credit</h2>
-          </div>
+          <div><h3>Payment Terms: Cash / Credit</h3></div>
         </div>
       </div>
-
-      <!-- Print and Update -->
-      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="30px">
-        <div fxLayout="column" fxFlex="100" fxLayoutAlign="space-between center">
-          Print
+    
+      <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxLayout="column" fxFlex="100" fxLayoutGap="20px">
+          <div>Print</div>
           <div>
-            <mat-icon style="font-size:54px; height:auto; width: auto; color: orange;">print</mat-icon>
+            <mat-icon style="font-size:54px; color: orange;">print</mat-icon>
           </div>
         </div>
-
+    
         <div fxLayout="column" fxLayoutAlign="space-between center">
           Update Status
           <div class="small-rounded-images">
@@ -68,16 +56,15 @@
           </div>
         </div>
       </div>
-
-      <!-- Order Info -->
-      <div fxLayout="row" fxLayoutGap="20px">
+    
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
         <div fxLayout="column" fxLayoutGap="10px">
           <mat-label class="heading">Order No:</mat-label>
           <mat-label class="heading">Order amount:</mat-label>
           <mat-label class="heading">Order Type:</mat-label>
           <mat-label class="heading">Date Added:</mat-label>
         </div>
-
+    
         <div fxLayout="column" fxLayoutGap="10px">
           <mat-label class="heading">TFD0000043</mat-label>
           <mat-label>340</mat-label>
@@ -85,8 +72,7 @@
           <mat-label>Nov, 5 2017</mat-label>
         </div>
       </div>
-    </div>
-  </mat-card>
+    </mat-card>
 
   <div fxLayout="row">
     <div fxLayout="column">
@@ -370,7 +356,7 @@
   </mat-card>
 
 
-  <div fxLayout="row" fxLayoutAlign="space-between">
+  <div fxLayout="row" fxLayoutAlign="space-between" fxLayout.xs="column">
     <mat-card class="example-card">
 
       <div style="background-color:orange; padding: 10px; color: white; font-weight: bold; margin: -16px -16px 0 -16px;">
@@ -399,10 +385,10 @@
       </div>
     </mat-card>
     <mat-card class="example-card">
-      <div style="background-color:#ffefb6; padding: 10px; margin: -16px -16px 0 -16px;">
+      <div style="background-color:#e8cd6a; padding: 10px; margin: -16px -16px 0 -16px; font-weight: bold">
         Reviews
       </div>
-      <div fxLayout="row" fxLayoutGap="10px">
+      <div fxLayout="row" fxLayoutGap="10px" style="padding:8px;">
         <div fxLayout="column" fxLayoutAlign="space-between">
           <div style="font-size:13px; font-weight: bold">
             <p><span>&nbsp;</span><span>&nbsp;</span>By Customer:</p>
