@@ -1,26 +1,17 @@
-<app-review-dialog></app-review-dialog>
-
-<!-- Showing a Component in a dialog box -->
-<!--
-  <button mat-raised-button color="primary" (click)="openDialog()">
-    Open Dialog Box
-  </button>
--->
-
 <!-- Loader in case products are not loaded from Firebase -->
-<!--
-  <div *ngIf="!products" fxLayout="row" fxLayoutAlign="center center" style="height:100vh">
-    <mat-spinner></mat-spinner>
-  </div>
 
-  <div fxFlex="100" fxLayout="row" fxLayoutGap="10px" *ngIf="products;">
--->
+<div *ngIf="!products" fxLayout="row" fxLayoutAlign="center center" style="height:100vh">
+  <mat-spinner></mat-spinner>
+</div>
 
-<!-- List of Categories -->
-<!--
+<div fxFlex="100" fxLayout="row" fxLayoutGap="10px" *ngIf="products;">
+
+
+  <!-- List of Categories -->
+
   <div fxFlex="20">
     <mat-selection-list>
-      <mat-list-option>
+      <mat-list-option routerlink="pr">
         All Categories
       </mat-list-option>
       <mat-list-option>
@@ -40,16 +31,15 @@
       </mat-list-option>
     </mat-selection-list>
   </div>
--->
 
-<!-- Products -->
-<!--
-  <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around">
-      <div *ngFor="let product of products | keyvalue; let i=index">
-        <product-card [product]="product"></product-card>
-        <div *ngIf="(i + 1 ) %2 === 0" class="w-100"></div>
-      </div>
+
+  <!-- Products -->
+
+  <div fxFlex fxLayout="row wrap" fxLayoutAlign="space-around" fxLayoutGap="20px grid">
+    <div *ngFor="let product of products | keyvalue; let i=index">
+      <product-card [product]="product"></product-card>
+
     </div>
-
   </div>
--->
+
+</div>
