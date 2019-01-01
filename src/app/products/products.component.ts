@@ -14,11 +14,12 @@ export class ProductsComponent implements OnInit {
   constructor(
     private productService: ProductsService,
     public dialog: MatDialog
-  ) {}
+  ) { }
 
   openDialog() {
     this.dialog.open(ReviewDialogComponent, {
-      width: "500px"
+      width: "500px",
+      height: "80%",
     });
   }
 
