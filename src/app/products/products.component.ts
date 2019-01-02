@@ -11,16 +11,19 @@ import { ReviewDialogComponent } from "../dashboards/review-dialog/review-dialog
 })
 export class ProductsComponent implements OnInit {
   products;
-  constructor(
-    private productService: ProductsService,
-    public dialog: MatDialog
-  ) { }
+  order;
+  constructor(private productService: ProductsService, public dialog: MatDialog) {
+    this.order = {
+      customer_name: 'Yousaf',
+      price: 500,
+      order_time: '08:34 pm',
+      items: 2
+    };
+  }
 
   openDialog() {
-    this.dialog.open(ReviewDialogComponent, {
-      width: "500px",
-      height: "80%",
-    });
+    const ref = this.dialog.open(ReviewDialogComponent, { width: "500px" });
+    ref.componentInstance.order = this.order;
   }
 
   ngOnInit() {
