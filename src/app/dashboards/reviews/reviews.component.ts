@@ -15,7 +15,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { image: '', 'item name': 'Special Request', quantity: 0, unit_price: 0, promotion: '', discount: 0, total: 0 },
 ];
 @Component({
-  selector: 'app-reviews',
+  selector: 'reviews',
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.css']
 })
